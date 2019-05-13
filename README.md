@@ -10,6 +10,8 @@ Which output should we use?
 * Audio output from the Jack. L to X, and R to Z
 * LOUT+ and LOUT- to have balanced signal directly
 
+![](https://github.com/dusjagr/Axoloti_Laser_Interface/raw/master/Outputs_Axoloti_schematic_notes.png)
+
 ## Amplifier
 
 We need to go to +/- 5V to have maximum range
@@ -19,6 +21,10 @@ Easy with LM072 op-amp
 ## Balanced output
 
 Seems we need balanced signals. ok. add another LM072 op-amp
+
+## Schematic
+
+![](https://github.com/dusjagr/Axoloti_Laser_Interface/raw/master/Axoloti_Laser_schema01.png)
 
 # RGB output
 ## PWM?
