@@ -1,7 +1,7 @@
 # Axoloti_Laser_Interface
 Adding some special outputs to Axoloti to control a Laser projector. X-Y on audio, 3 RGB outputs on PWM
 
-
+![](https://github.com/dusjagr/Axoloti_Laser_Interface/raw/master/photos/hacked_axoloti.jpg)
 
 # X-Y amplification stage
 
@@ -11,6 +11,8 @@ Which output should we use?
 * LOUT+ and LOUT- to have balanced signal directly
 
 ![](https://github.com/dusjagr/Axoloti_Laser_Interface/raw/master/Outputs_Axoloti_schematic_notes.png)
+
+![](https://github.com/dusjagr/Axoloti_Laser_Interface/raw/master/photos/Outputs_Axoloti_board.jpg)
 
 ## Amplifier
 
@@ -28,6 +30,8 @@ Seems we need balanced signals. ok. add another LM072 op-amp
 
 # RGB output
 ## PWM?
+
+![](https://github.com/dusjagr/Axoloti_Laser_Interface/raw/master/photos/screenshot_fastPWM.png)
 
 ## Filter and Amp needed?
 
