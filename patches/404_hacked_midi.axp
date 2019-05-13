@@ -1,0 +1,188 @@
+<patch-1.0 appVersion="1.0.12">
+   <obj type="midi/in/cc any" uuid="eca13eae3f7625f3ca80cadd19a90de033698aa" name="cc_1" x="434" y="14">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/chart b" uuid="d2bdf496f96ee521628490a038411210fbe29b15" name="chart_2" x="560" y="14">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/kscope 128 p" uuid="664f9317a38a6910ae9bc020e00ca2dd2ee692fa" name="kscope_1" x="644" y="14">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="phi/midi/in/cc any disp" uuid="af305633-dac6-4a36-b85b-6d6be5d12f84" name="cc_2" x="784" y="14">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="midi/in/keyb mod" uuid="abcd509d15e7d13d5381203fd2b4d0ac6fe57bb3" name="keyb_1" x="938" y="28">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/chart b" uuid="d2bdf496f96ee521628490a038411210fbe29b15" name="chart_3" x="1064" y="28">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/chart b" uuid="d2bdf496f96ee521628490a038411210fbe29b15" name="chart_4" x="1134" y="28">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/i" uuid="5e35fd0c62d81e70017289250cf28edd26e19e4a" name="i_1" x="462" y="98">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="wave/flashplay" uuid="595422aa-8767-45a8-ae08-bd8ac0247c61" name="flashwaveplay~_1" x="924" y="182">
+      <params/>
+      <attribs>
+         <combo attributeName="sample" selection="808bd"/>
+      </attribs>
+   </obj>
+   <obj type="gpio/in/analog" uuid="1c0c845ed2d7e06ae5f377ba13d9d09f4747ac87" name="analog_1" x="0" y="224">
+      <params/>
+      <attribs>
+         <combo attributeName="channel" selection="PA1 (ADC1_IN1)"/>
+      </attribs>
+   </obj>
+   <obj type="env/d" uuid="190ae648e41832b41adbedb465317c18a010aefe" name="envd_2" x="616" y="224">
+      <params>
+         <frac32.s.map name="d" value="25.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="disp/chart b" uuid="d2bdf496f96ee521628490a038411210fbe29b15" name="chart_1" x="154" y="238">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="wave/flashplay" uuid="595422aa-8767-45a8-ae08-bd8ac0247c61" name="flashwaveplay~_2" x="924" y="238">
+      <params/>
+      <attribs>
+         <combo attributeName="sample" selection="808snare"/>
+      </attribs>
+   </obj>
+   <obj type="gpio/out/pwm t3" uuid="48d869d4-5d1e-4024-acf9-ac975c417216" name="pwm_1" x="294" y="252">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="conv/unipolar2bipolar" uuid="efc8ee28c508740c5edf7995eaaa07a6d6818e5e" name="unipolar2bipolar_1" x="0" y="308">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="env/hd" uuid="819e2ee2c29202649dec31560d8be9a92528ef15" name="envhd_1" x="574" y="308">
+      <params>
+         <frac32.s.map name="d" value="16.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="mix/mix 2" uuid="682ea5496ded046d981e26b720a6e7f8eca97541" name="mix2_1" x="686" y="308">
+      <params>
+         <frac32.u.map name="gain1" value="27.5"/>
+         <frac32.u.map name="gain2" value="31.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="math/*c" uuid="7d5ef61c3bcd571ee6bbd8437ef3612125dfb225" name="*c_1" x="798" y="308">
+      <params>
+         <frac32.u.map name="amp" value="44.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="audio/outconfig" uuid="eace67e3304afaa1bb695b444e9345f2d8adaf00" name="outconfig_1" x="910" y="308">
+      <params/>
+      <attribs>
+         <combo attributeName="headphones" selection="0dB"/>
+         <combo attributeName="mode" selection="Stereo"/>
+      </attribs>
+   </obj>
+   <obj type="mix/mix 2" uuid="30c04239c88e09d3fa5c333b784ecf54f1b0e268" name="mix_1" x="1036" y="322">
+      <params>
+         <frac32.u.map name="gain1" value="38.0"/>
+         <frac32.u.map name="gain2" value="28.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="math/muls 2" uuid="c3083089dc169cd87133000659a02789dec5a151" name="muls_1" x="1120" y="322">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="audio/out stereo" uuid="a1ca7a567f535acc21055669829101d3ee7f0189" name="dac~_2" x="1190" y="322">
+      <params/>
+      <attribs/>
+   </obj>
+   <nets>
+      <net>
+         <source obj="mix2_1" outlet="out"/>
+         <dest obj="*c_1" inlet="in"/>
+      </net>
+      <net>
+         <dest obj="envd_2" inlet="trig"/>
+         <dest obj="envhd_1" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="envhd_1" outlet="env"/>
+         <dest obj="mix2_1" inlet="in2"/>
+      </net>
+      <net>
+         <source obj="envd_2" outlet="env"/>
+         <dest obj="mix2_1" inlet="in1"/>
+      </net>
+      <net>
+         <source obj="flashwaveplay~_1" outlet="out"/>
+         <dest obj="mix_1" inlet="in1"/>
+      </net>
+      <net>
+         <source obj="muls_1" outlet="out"/>
+         <dest obj="dac~_2" inlet="left"/>
+         <dest obj="dac~_2" inlet="right"/>
+      </net>
+      <net>
+         <source obj="flashwaveplay~_2" outlet="out"/>
+         <dest obj="mix_1" inlet="in2"/>
+      </net>
+      <net>
+         <source obj="mix_1" outlet="out"/>
+         <dest obj="muls_1" inlet="in"/>
+      </net>
+      <net>
+         <source obj="analog_1" outlet="out"/>
+         <dest obj="unipolar2bipolar_1" inlet="i"/>
+      </net>
+      <net>
+         <source obj="unipolar2bipolar_1" outlet="o"/>
+         <dest obj="chart_1" inlet="in"/>
+      </net>
+      <net>
+         <source obj="cc_1" outlet="value"/>
+         <dest obj="chart_2" inlet="in"/>
+         <dest obj="kscope_1" inlet="in"/>
+         <dest obj="pwm_1" inlet="pb1"/>
+      </net>
+      <net>
+         <source obj="cc_1" outlet="trig"/>
+         <dest obj="kscope_1" inlet="hold"/>
+      </net>
+      <net>
+         <source obj="keyb_1" outlet="note"/>
+         <dest obj="chart_3" inlet="in"/>
+      </net>
+      <net>
+         <source obj="keyb_1" outlet="velocity"/>
+         <dest obj="chart_4" inlet="in"/>
+      </net>
+   </nets>
+   <settings>
+      <subpatchmode>no</subpatchmode>
+      <MidiChannel>11</MidiChannel>
+      <NPresets>8</NPresets>
+      <NPresetEntries>32</NPresetEntries>
+      <NModulationSources>8</NModulationSources>
+      <NModulationTargetsPerSource>8</NModulationTargetsPerSource>
+      <Author></Author>
+   </settings>
+   <notes><![CDATA[]]></notes>
+   <windowPos>
+      <x>93</x>
+      <y>52</y>
+      <width>1267</width>
+      <height>757</height>
+   </windowPos>
+</patch-1.0>

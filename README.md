@@ -27,6 +27,9 @@ Seems we need balanced signals. ok. add another LM072 op-amp
 
 # Axoloti Patch
 
+http://community.axoloti.com/t/pwm-output-pin-frequency/2776/11
+
+
 ## Changing the PWM frequency and resolution:
 
 static const PWMConfig pwmcfg = {400000, /* 400kHz PWM clock frequency.  */

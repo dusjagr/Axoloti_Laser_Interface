@@ -1,0 +1,175 @@
+<patch-1.0 appVersion="1.0.12">
+   <obj type="gpio/in/analog" uuid="1c0c845ed2d7e06ae5f377ba13d9d09f4747ac87" name="analog_1" x="42" y="28">
+      <params/>
+      <attribs>
+         <combo attributeName="channel" selection="PA1 (ADC1_IN1)"/>
+      </attribs>
+   </obj>
+   <obj type="disp/chart b" uuid="d2bdf496f96ee521628490a038411210fbe29b15" name="chart_1" x="182" y="28">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="phi/midi/in/cc any disp" uuid="af305633-dac6-4a36-b85b-6d6be5d12f84" name="cc_1" x="644" y="28">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="midi/in/cc any" uuid="eca13eae3f7625f3ca80cadd19a90de033698aa" name="cc_2" x="784" y="28">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/kscope 128 p" uuid="664f9317a38a6910ae9bc020e00ca2dd2ee692fa" name="kscope_2" x="882" y="28">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="gpio/out/pwm t4 servo" uuid="adcfa8b373fa208a079f6a8973e8b31d46f75565" name="pwm_1" x="42" y="98">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="env/follower" uuid="356ce1d18ac6b51704833f94dac5dea823fb8223" name="env_1" x="392" y="210">
+      <params/>
+      <attribs>
+         <combo attributeName="time" selection="2.7ms"/>
+      </attribs>
+   </obj>
+   <obj type="math/smooth2" uuid="9ba3ddec912512e6b63211080e89cb25b6d84834" name="smooth1" x="476" y="210">
+      <params>
+         <frac32.u.map name="risetime" value="12.5"/>
+         <frac32.u.map name="falltime" value="10.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="disp/chart b" uuid="d2bdf496f96ee521628490a038411210fbe29b15" name="chart_2" x="574" y="210">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/chart p" uuid="58f42040a894006a5f73ed8cb8d0bd45481b28cd" name="chart_3" x="658" y="210">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="gpio/out/pwm t3" uuid="48d869d4-5d1e-4024-acf9-ac975c417216" name="pwm_2" x="756" y="210">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="conv/bipolar2unipolar" uuid="f6f63d71053d572d3c795f83c7ec11dfbbce82dd" name="bipolar2unipolar_1" x="476" y="336">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="gain/vca" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_2" x="938" y="378">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="audio/outconfig" uuid="eace67e3304afaa1bb695b444e9345f2d8adaf00" name="outconfig_1" x="1022" y="378">
+      <params/>
+      <attribs>
+         <combo attributeName="headphones" selection="-48dB"/>
+         <combo attributeName="mode" selection="Stereo"/>
+      </attribs>
+   </obj>
+   <obj type="audio/inconfig" uuid="9a80ef3c19f2a8f81da3a3b7c1c44d18126b97d9" name="adcconfig1" x="42" y="406">
+      <params/>
+      <attribs>
+         <combo attributeName="gain" selection="0dB"/>
+         <combo attributeName="boost" selection="20dB"/>
+         <combo attributeName="mode" selection="Stereo"/>
+      </attribs>
+   </obj>
+   <obj type="disp/scope 128 b" uuid="2b69f51a714fc276503ef10c349d6d253d1ae5e2" name="scope_1" x="140" y="406">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="fx/chorus" uuid="d4524ad0-fe15-4ec5-90d4-586b9aa6a908" name="obj_1" x="518" y="434">
+      <params>
+         <frac32.u.map name="depth" value="44.0"/>
+         <frac32.s.map name="speed" value="0.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="mix/mix 2 g" uuid="221f038da51943034a75e442c90624fcebfe6112" name="mix_1" x="644" y="434">
+      <params>
+         <frac32.u.map name="gain1" value="34.0"/>
+         <frac32.u.map name="gain2" value="31.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="filter/lp m" uuid="1aa1bc51da479ed92429af700591f9d7b9f45f22" name="lp_1" x="770" y="434">
+      <params>
+         <frac32.s.map name="pitch" value="1.0"/>
+         <frac32.u.map name="reso" value="0.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="audio/out stereo" uuid="a1ca7a567f535acc21055669829101d3ee7f0189" name="dac_1" x="1022" y="434">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="audio/in stereo" uuid="99848ad6d90a8e615e83b2e619cfc806f28e7281" name="adc_1" x="42" y="476">
+      <params/>
+      <attribs/>
+   </obj>
+   <nets>
+      <net>
+         <source obj="analog_1" outlet="out"/>
+         <dest obj="pwm_1" inlet="pb9"/>
+         <dest obj="vca_2" inlet="v"/>
+         <dest obj="chart_1" inlet="in"/>
+      </net>
+      <net>
+         <source obj="vca_2" outlet="o"/>
+         <dest obj="dac_1" inlet="left"/>
+         <dest obj="dac_1" inlet="right"/>
+      </net>
+      <net>
+         <source obj="cc_2" outlet="value"/>
+         <dest obj="kscope_2" inlet="in"/>
+      </net>
+      <net>
+         <source obj="env_1" outlet="amp"/>
+         <dest obj="smooth1" inlet="in"/>
+      </net>
+      <net>
+         <source obj="smooth1" outlet="out"/>
+         <dest obj="chart_2" inlet="in"/>
+         <dest obj="bipolar2unipolar_1" inlet="i"/>
+         <dest obj="pwm_2" inlet="pb1"/>
+      </net>
+      <net>
+         <source obj="mix_1" outlet="out"/>
+         <dest obj="lp_1" inlet="in"/>
+      </net>
+      <net>
+         <dest obj="scope_1" inlet="in"/>
+         <dest obj="env_1" inlet="in"/>
+      </net>
+      <net>
+         <source obj="obj_1" outlet="L"/>
+         <dest obj="mix_1" inlet="in1"/>
+      </net>
+      <net>
+         <source obj="obj_1" outlet="R"/>
+         <dest obj="mix_1" inlet="in2"/>
+      </net>
+      <net>
+         <source obj="bipolar2unipolar_1" outlet="o"/>
+         <dest obj="chart_3" inlet="in"/>
+         <dest obj="lp_1" inlet="pitch"/>
+      </net>
+      <net>
+         <source obj="adc_1" outlet="left"/>
+         <dest obj="obj_1" inlet="in"/>
+      </net>
+      <net>
+         <source obj="lp_1" outlet="out"/>
+         <dest obj="vca_2" inlet="a"/>
+      </net>
+   </nets>
+   <settings>
+      <subpatchmode>no</subpatchmode>
+   </settings>
+   <notes><![CDATA[]]></notes>
+   <windowPos>
+      <x>166</x>
+      <y>58</y>
+      <width>1172</width>
+      <height>693</height>
+   </windowPos>
+</patch-1.0>
