@@ -58,3 +58,19 @@ palSetPadMode(GPIOA, 6, PAL_MODE_ALTERNATE(2));
 palSetPadMode(GPIOA, 7, PAL_MODE_ALTERNATE(2));
 palSetPadMode(GPIOB, 0, PAL_MODE_ALTERNATE(2));
 palSetPadMode(GPIOB, 1, PAL_MODE_ALTERNATE(2));
+
+# Further info
+
+## Other Axoloty vector synths
+
+https://www.akirasrebirth.com/
+
+## Technical help
+
+https://en.wikipedia.org/wiki/Balanced_audio
+
+https://www.electronics-notes.com/articles/analogue_circuits/operational-amplifier-op-amp/non-inverting-amplifier.php
+
+http://sound.whsites.net/project51.htm
+
+
