@@ -65,6 +65,8 @@ palSetPadMode(GPIOB, 1, PAL_MODE_ALTERNATE(2));
 
 https://www.akirasrebirth.com/
 
+http://community.axoloti.com/t/axoloti-ilda-laser/5634/4
+
 ## Technical help
 
 https://en.wikipedia.org/wiki/Balanced_audio
@@ -72,5 +74,16 @@ https://en.wikipedia.org/wiki/Balanced_audio
 https://www.electronics-notes.com/articles/analogue_circuits/operational-amplifier-op-amp/non-inverting-amplifier.php
 
 http://sound.whsites.net/project51.htm
+
+https://github.com/ffd8/dac_ilda
+
+## Other commercial hardware/Software
+
+https://www.laserworld.com/shop/laserworld-shownet-network-interface
+
+https://lzxindustries.net/products/cyclops
+
+https://www.showeditor.com/en
+
 
 

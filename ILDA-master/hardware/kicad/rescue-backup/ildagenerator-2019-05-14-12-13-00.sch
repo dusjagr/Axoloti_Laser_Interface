@@ -1,0 +1,470 @@
+EESchema Schematic File Version 2
+LIBS:ildagenerator-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:dc_dc
+LIBS:ildagenerator-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title "ILDA Output"
+Date "9 aug 2014"
+Rev "0.2"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	5000 4050 4900 4050
+Wire Wire Line
+	4900 4050 4900 4200
+Wire Wire Line
+	3800 4200 3800 4100
+Wire Wire Line
+	3800 4100 3950 4100
+Wire Wire Line
+	3950 4100 3950 4200
+Wire Wire Line
+	3400 4200 3400 3750
+Wire Wire Line
+	3400 3750 2700 3750
+Wire Wire Line
+	2700 3750 2700 3200
+Wire Wire Line
+	2700 3200 2800 3200
+Wire Wire Line
+	4400 3200 4500 3200
+Wire Wire Line
+	4500 3200 4500 3750
+Wire Wire Line
+	4500 3750 3700 3750
+Wire Wire Line
+	3700 3750 3700 4200
+Wire Wire Line
+	4650 1300 4650 1200
+Connection ~ 3600 1200
+Wire Wire Line
+	2700 1800 2700 1000
+Wire Wire Line
+	1800 2600 1800 700 
+Wire Wire Line
+	2000 2400 2000 800 
+Wire Wire Line
+	6200 2200 6200 900 
+Wire Wire Line
+	6300 800  6300 2000
+Wire Wire Line
+	6500 600  1600 600 
+Wire Wire Line
+	2800 2800 1600 2800
+Wire Wire Line
+	2700 1800 2800 1800
+Wire Wire Line
+	2700 1000 6100 1000
+Wire Wire Line
+	2000 2400 2800 2400
+Wire Wire Line
+	2000 800  6300 800 
+Wire Wire Line
+	1800 2600 2800 2600
+Wire Wire Line
+	1800 700  6400 700 
+Wire Wire Line
+	4400 2400 6000 2400
+Wire Wire Line
+	6600 1600 6500 1600
+Wire Wire Line
+	6600 1800 6400 1800
+Wire Wire Line
+	6300 2000 6600 2000
+Wire Wire Line
+	6200 2200 6600 2200
+Wire Wire Line
+	6600 2400 6100 2400
+Wire Wire Line
+	4400 2600 6600 2600
+Wire Wire Line
+	6000 2400 6000 2800
+Wire Wire Line
+	6000 2800 6600 2800
+Wire Wire Line
+	4650 1200 2800 1200
+Wire Wire Line
+	2150 2250 2150 2200
+Wire Wire Line
+	2150 2200 2300 2200
+Wire Wire Line
+	2700 2200 2800 2200
+Wire Wire Line
+	2800 2000 2600 2000
+Wire Wire Line
+	6200 900  2600 900 
+Wire Wire Line
+	5200 3050 5200 2800
+Wire Wire Line
+	5200 3000 5100 3000
+Wire Wire Line
+	4550 3000 4550 1800
+Connection ~ 4550 1800
+Connection ~ 4550 3000
+Wire Wire Line
+	4700 3000 4400 3000
+Wire Wire Line
+	4400 1600 4900 1600
+Wire Wire Line
+	4400 1800 4700 1800
+Wire Wire Line
+	5200 2800 4400 2800
+Connection ~ 5200 3000
+Wire Wire Line
+	4850 2100 4550 2100
+Connection ~ 4550 2100
+Wire Wire Line
+	4900 1600 4900 1500
+Connection ~ 4500 1600
+Wire Wire Line
+	6500 1600 6500 600 
+Wire Wire Line
+	6400 1800 6400 700 
+Wire Wire Line
+	6100 2400 6100 1000
+Wire Wire Line
+	1600 2800 1600 600 
+Wire Wire Line
+	2600 900  2600 2000
+Wire Wire Line
+	2800 1200 2800 1600
+Wire Wire Line
+	4500 1200 4500 1600
+Connection ~ 4500 1200
+Wire Wire Line
+	4400 3400 4400 3650
+Wire Wire Line
+	4400 3650 3600 3650
+Wire Wire Line
+	3600 3650 3600 4200
+Wire Wire Line
+	3500 4200 3500 3650
+Wire Wire Line
+	3500 3650 2800 3650
+Wire Wire Line
+	2800 3650 2800 3400
+Wire Wire Line
+	3300 4200 3300 3850
+Wire Wire Line
+	3300 3850 2600 3850
+Wire Wire Line
+	2600 3850 2600 3000
+Wire Wire Line
+	2600 3000 2800 3000
+$Comp
+L GND-RESCUE-ildagenerator #PWR7
+U 1 1 53E63A9F
+P 5000 4100
+F 0 "#PWR7" H 5000 4100 30  0001 C CNN
+F 1 "GND" H 5000 4030 30  0001 C CNN
+F 2 "" H 5000 4100 60  0001 C CNN
+F 3 "" H 5000 4100 60  0001 C CNN
+	1    5000 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR6
+U 1 1 53E63A98
+P 4800 3950
+F 0 "#PWR6" H 4800 4040 20  0001 C CNN
+F 1 "+5V" H 4800 4040 30  0000 C CNN
+F 2 "" H 4800 3950 60  0001 C CNN
+F 3 "" H 4800 3950 60  0001 C CNN
+	1    4800 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L +15V #PWR11
+U 1 1 53E63A91
+P 6300 3550
+F 0 "#PWR11" H 6300 3500 20  0001 C CNN
+F 1 "+15V" H 6300 3650 30  0000 C CNN
+F 2 "" H 6300 3550 60  0001 C CNN
+F 3 "" H 6300 3550 60  0001 C CNN
+	1    6300 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L -15V #PWR12
+U 1 1 53E63A8A
+P 6300 3850
+F 0 "#PWR12" H 6300 3980 20  0001 C CNN
+F 1 "-15V" H 6300 3950 30  0000 C CNN
+F 2 "" H 6300 3850 60  0001 C CNN
+F 3 "" H 6300 3850 60  0001 C CNN
+	1    6300 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P8
+U 1 1 53E639B6
+P 4850 4400
+F 0 "P8" V 4800 4400 50  0000 C CNN
+F 1 "CONN_4" V 4900 4400 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 4850 4400 60  0001 C CNN
+F 3 "" H 4850 4400 60  0001 C CNN
+	1    4850 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L GND-RESCUE-ildagenerator #PWR2
+U 1 1 53E5FD0B
+P 3950 4200
+F 0 "#PWR2" H 3950 4200 30  0001 C CNN
+F 1 "GND" H 3950 4130 30  0001 C CNN
+F 2 "" H 3950 4200 60  0001 C CNN
+F 3 "" H 3950 4200 60  0001 C CNN
+	1    3950 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L LTC2656BIFE-L16 U1
+U 1 1 53E20CA1
+P 3600 2500
+F 0 "U1" H 3650 3400 60  0001 C CNN
+F 1 "LTC2656BIFE-L16" H 3600 1400 60  0000 C CNN
+F 2 "" H 3600 2500 60  0001 C CNN
+F 3 "" H 3600 2500 60  0001 C CNN
+	1    3600 2500
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 6600 1450 1000 1650
+U 53E1F025
+F0 "Sheet53E1F024" 50
+F1 "OpAmps.sch" 50
+F2 "DA1" I L 6600 1800 60 
+F3 "DA2" I L 6600 2000 60 
+F4 "DA3" I L 6600 2200 60 
+F5 "DA4" I L 6600 2400 60 
+F6 "DA5" I L 6600 2600 60 
+F7 "DA6" I L 6600 2800 60 
+F8 "DARef" I L 6600 1600 60 
+$EndSheet
+$Comp
+L GND-RESCUE-ildagenerator #PWR4
+U 1 1 53E21A74
+P 4650 1300
+F 0 "#PWR4" H 4650 1300 30  0001 C CNN
+F 1 "GND" H 4650 1230 30  0001 C CNN
+F 2 "" H 4650 1300 60  0001 C CNN
+F 3 "" H 4650 1300 60  0001 C CNN
+	1    4650 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-RESCUE-ildagenerator C1
+U 1 1 53E22370
+P 2500 2200
+F 0 "C1" H 2500 2300 40  0000 L CNN
+F 1 "0.1µF" H 2506 2115 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2500 2200 60  0001 C CNN
+F 3 "" H 2500 2200 60  0001 C CNN
+	1    2500 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L GND-RESCUE-ildagenerator #PWR1
+U 1 1 53E223C7
+P 2150 2250
+F 0 "#PWR1" H 2150 2250 30  0001 C CNN
+F 1 "GND" H 2150 2180 30  0001 C CNN
+F 2 "" H 2150 2250 60  0001 C CNN
+F 3 "" H 2150 2250 60  0001 C CNN
+	1    2150 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-RESCUE-ildagenerator C2
+U 1 1 53E22746
+P 4900 3000
+F 0 "C2" H 4900 3100 40  0000 L CNN
+F 1 "0.1µF" H 4906 2915 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4900 3000 60  0001 C CNN
+F 3 "" H 4900 3000 60  0001 C CNN
+	1    4900 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L GND-RESCUE-ildagenerator #PWR10
+U 1 1 53E2274C
+P 5200 3050
+F 0 "#PWR10" H 5200 3050 30  0001 C CNN
+F 1 "GND" H 5200 2980 30  0001 C CNN
+F 2 "" H 5200 3050 60  0001 C CNN
+F 3 "" H 5200 3050 60  0001 C CNN
+	1    5200 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR5
+U 1 1 53E227AB
+P 4700 1800
+F 0 "#PWR5" H 4700 1890 20  0001 C CNN
+F 1 "+5V" H 4700 1890 30  0000 C CNN
+F 2 "" H 4700 1800 60  0001 C CNN
+F 3 "" H 4700 1800 60  0001 C CNN
+	1    4700 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG1
+U 1 1 53E20F06
+P 4850 2100
+F 0 "#FLG1" H 4850 2195 30  0001 C CNN
+F 1 "PWR_FLAG" H 4850 2280 30  0000 C CNN
+F 2 "" H 4850 2100 60  0001 C CNN
+F 3 "" H 4850 2100 60  0001 C CNN
+	1    4850 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG2
+U 1 1 53E20F44
+P 4900 1500
+F 0 "#FLG2" H 4900 1595 30  0001 C CNN
+F 1 "PWR_FLAG" H 4900 1680 30  0000 C CNN
+F 2 "" H 4900 1500 60  0001 C CNN
+F 3 "" H 4900 1500 60  0001 C CNN
+	1    4900 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L NMA0509SC U5
+U 1 1 55E4611A
+P 5750 3700
+F 0 "U5" H 5750 3400 60  0000 C CNN
+F 1 "NMA0509SC" H 5750 4000 60  0000 C CNN
+F 2 "footprints:NMA_5V_12V_15V_Series" H 5750 3700 60  0001 C CNN
+F 3 "http://power.murata.com/data/power/ncl/kdc_nms.pdf" H 5750 3700 60  0001 C CNN
+	1    5750 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 4050 5000 4100
+$Comp
+L +5V #PWR8
+U 1 1 55E47078
+P 5150 3500
+F 0 "#PWR8" H 5150 3590 20  0001 C CNN
+F 1 "+5V" H 5150 3590 30  0000 C CNN
+F 2 "" H 5150 3500 60  0001 C CNN
+F 3 "" H 5150 3500 60  0001 C CNN
+	1    5150 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 3500 5150 3550
+Wire Wire Line
+	5150 3550 5250 3550
+$Comp
+L GND-RESCUE-ildagenerator #PWR9
+U 1 1 55E47142
+P 5150 3900
+F 0 "#PWR9" H 5150 3900 30  0001 C CNN
+F 1 "GND" H 5150 3830 30  0001 C CNN
+F 2 "" H 5150 3900 60  0001 C CNN
+F 3 "" H 5150 3900 60  0001 C CNN
+	1    5150 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 3850 5150 3850
+Wire Wire Line
+	5150 3850 5150 3900
+$Comp
+L GND-RESCUE-ildagenerator #PWR13
+U 1 1 55E476F0
+P 6450 3750
+F 0 "#PWR13" H 6450 3750 30  0001 C CNN
+F 1 "GND" H 6450 3680 30  0001 C CNN
+F 2 "" H 6450 3750 60  0001 C CNN
+F 3 "" H 6450 3750 60  0001 C CNN
+	1    6450 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 3850 6300 3850
+Wire Wire Line
+	6250 3550 6300 3550
+Wire Wire Line
+	6250 3700 6450 3700
+Wire Wire Line
+	6450 3700 6450 3750
+$Comp
+L CONN_01X06 P7
+U 1 1 53E5FC4C
+P 3550 4400
+F 0 "P7" V 3500 4400 60  0000 C CNN
+F 1 "CONN_6" V 3600 4400 60  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06" H 3550 4400 60  0001 C CNN
+F 3 "" H 3550 4400 60  0001 C CNN
+	1    3550 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L VR MOV13
+U 1 1 55E49EC4
+P 4550 4050
+F 0 "MOV13" V 4610 4004 50  0000 C TNN
+F 1 "5.6V" V 4550 4050 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" H 4550 4050 60  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/VC%201206_Serie.pdf" H 4550 4050 60  0001 C CNN
+	1    4550 4050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4800 3950 4800 4200
+Connection ~ 4800 4050
+Wire Wire Line
+	4300 4050 4300 4150
+$Comp
+L GND-RESCUE-ildagenerator #PWR3
+U 1 1 55E4A459
+P 4300 4150
+F 0 "#PWR3" H 4300 4150 30  0001 C CNN
+F 1 "GND" H 4300 4080 30  0001 C CNN
+F 2 "" H 4300 4150 60  0001 C CNN
+F 3 "" H 4300 4150 60  0001 C CNN
+	1    4300 4150
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

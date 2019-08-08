@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name ildagenerator-rescue)(type Legacy)(uri ${KIPRJMOD}/ildagenerator-rescue.lib)(options "")(descr ""))
+  (lib (name dc_dc)(type Legacy)(uri ${KIPRJMOD}/dc_dc.lib)(options "")(descr ""))
+)

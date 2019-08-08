@@ -1,0 +1,912 @@
+<patch-1.0 appVersion="1.0.12">
+   <comment type="patch/comment" x="98" y="0" text="play"/>
+   <obj type="ctrl/toggle" uuid="42b8134fa729d54bfc8d62d6ef3fa99498c1de99" name="toggle_2" x="98" y="14">
+      <params>
+         <bool32.tgl name="b" value="1"/>
+      </params>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="630" y="28" text="cube tables"/>
+   <comment type="patch/comment" x="910" y="28" text="icosphere tables"/>
+   <comment type="patch/comment" x="1190" y="28" text="Pyramid tables"/>
+   <obj type="table/alloc 8b" uuid="9a8785a40e0aebb9cc22af09b0a7cf5f91ad2c64" name="tabx1" x="546" y="42">
+      <params/>
+      <attribs>
+         <combo attributeName="size" selection="64"/>
+         <text attributeName="init">
+            <sText><![CDATA[array[0]=32;
+array[1]=32;
+array[2]=-32;
+array[3]=-32;
+array[4]=-32;
+array[5]=-32;
+array[6]=31.999968;
+array[7]=32;
+array[8]=31.999968;
+array[9]=-32;
+array[10]=-32;
+array[11]=32;
+array[12]=-32;
+array[13]=-32;
+array[14]=-32;
+array[15]=32;
+array[16]=31.999968;
+array[17]=32;
+array[18]=32;
+array[19]=-32;
+array[20]=-32;
+array[21]=-32;
+array[22]=32;
+array[23]=32;
+array[24]=32;]]></sText>
+         </text>
+      </attribs>
+   </obj>
+   <obj type="table/alloc 8b" uuid="9a8785a40e0aebb9cc22af09b0a7cf5f91ad2c64" name="taby1" x="630" y="42">
+      <params/>
+      <attribs>
+         <combo attributeName="size" selection="64"/>
+         <text attributeName="init">
+            <sText><![CDATA[array[0]=-32;
+array[1]=-32;
+array[2]=-32;
+array[3]=-32;
+array[4]=-32;
+array[5]=32;
+array[6]=32;
+array[7]=32;
+array[8]=32;
+array[9]=32;
+array[10]=32;
+array[11]=32;
+array[12]=32;
+array[13]=32;
+array[14]=-32;
+array[15]=-32;
+array[16]=32;
+array[17]=-32;
+array[18]=-32;
+array[19]=-32;
+array[20]=32;
+array[21]=-32;
+array[22]=-32;
+array[23]=32;
+array[24]=-32;]]></sText>
+         </text>
+      </attribs>
+   </obj>
+   <obj type="table/alloc 8b" uuid="9a8785a40e0aebb9cc22af09b0a7cf5f91ad2c64" name="tabz1" x="714" y="42">
+      <params/>
+      <attribs>
+         <combo attributeName="size" selection="64"/>
+         <text attributeName="init">
+            <sText><![CDATA[array[0]=-32;
+array[1]=32;
+array[2]=32;
+array[3]=-32;
+array[4]=32;
+array[5]=32;
+array[6]=32;
+array[7]=-31.999968;
+array[8]=32;
+array[9]=32;
+array[10]=-32;
+array[11]=-31.999968;
+array[12]=-32;
+array[13]=32;
+array[14]=32;
+array[15]=32;
+array[16]=32;
+array[17]=32;
+array[18]=-32;
+array[19]=-32;
+array[20]=-32;
+array[21]=-32;
+array[22]=-32;
+array[23]=-31.999968;
+array[24]=-32;]]></sText>
+         </text>
+      </attribs>
+   </obj>
+   <obj type="table/alloc 8b" uuid="9a8785a40e0aebb9cc22af09b0a7cf5f91ad2c64" name="tabx3" x="826" y="42">
+      <params/>
+      <attribs>
+         <combo attributeName="size" selection="64"/>
+         <text attributeName="init">
+            <sText><![CDATA[array[0]=0;
+array[1]=23.1552;
+array[2]=-8.84432;
+array[3]=23.1552;
+array[4]=23.1552;
+array[5]=23.1552;
+array[6]=8.84432;
+array[7]=-8.84432;
+array[8]=-28.6216;
+array[9]=-8.84432;
+array[10]=8.84432;
+array[11]=-23.1552;
+array[12]=-28.6216;
+array[13]=-8.84432;
+array[14]=-28.6216;
+array[15]=-23.1552;
+array[16]=8.84432;
+array[17]=28.6216;
+array[18]=23.1552;
+array[19]=-8.84432;
+array[20]=23.1552;
+array[21]=8.84432;
+array[22]=23.1552;
+array[23]=28.6216;
+array[24]=8.84432;
+array[25]=0;
+array[26]=-23.1552;
+array[27]=-23.1552;
+array[28]=-8.84432;
+array[29]=-23.1552;
+array[30]=-23.1552;
+array[31]=0;
+array[32]=-23.1552;
+array[33]=8.84432;
+array[34]=-23.1552;
+array[35]=0;
+array[36]=8.84432;
+array[37]=28.6216;
+array[38]=8.84432;
+array[39]=0;
+array[40]=28.6216;
+array[41]=0;
+array[42]=8.84432;
+array[43]=23.1552;
+array[44]=28.6216;
+array[45]=23.1552;
+array[46]=0;
+array[47]=-8.84432;
+array[48]=-23.1552;
+array[49]=-8.84432;
+array[50]=0;
+array[51]=-28.6216;
+array[52]=-23.1552;
+array[53]=-28.6216;
+array[54]=0;
+array[55]=-8.84432;
+array[56]=8.84432;
+array[57]=-8.84432;
+array[58]=0;
+array[59]=23.1552;
+array[60]=0;]]></sText>
+         </text>
+      </attribs>
+   </obj>
+   <obj type="table/alloc 8b" uuid="9a8785a40e0aebb9cc22af09b0a7cf5f91ad2c64" name="taby3" x="910" y="42">
+      <params/>
+      <attribs>
+         <combo attributeName="size" selection="64"/>
+         <text attributeName="init">
+            <sText><![CDATA[array[0]=0;
+array[1]=-16.82304;
+array[2]=-27.22048;
+array[3]=-16.82304;
+array[4]=16.82304;
+array[5]=-16.82304;
+array[6]=-27.22048;
+array[7]=-27.22048;
+array[8]=0;
+array[9]=-27.22048;
+array[10]=-27.22048;
+array[11]=-16.82304;
+array[12]=0;
+array[13]=27.22048;
+array[14]=0;
+array[15]=-16.82304;
+array[16]=-27.22048;
+array[17]=0;
+array[18]=16.82304;
+array[19]=27.22048;
+array[20]=16.82304;
+array[21]=27.22048;
+array[22]=16.82304;
+array[23]=0;
+array[24]=-27.22048;
+array[25]=0;
+array[26]=-16.82304;
+array[27]=16.82304;
+array[28]=27.22048;
+array[29]=16.82304;
+array[30]=-16.82304;
+array[31]=0;
+array[32]=16.82304;
+array[33]=27.22048;
+array[34]=16.82304;
+array[35]=0;
+array[36]=27.22048;
+array[37]=0;
+array[38]=27.22048;
+array[39]=0;
+array[40]=0;
+array[41]=0;
+array[42]=-27.22048;
+array[43]=-16.82304;
+array[44]=0;
+array[45]=-16.82304;
+array[46]=0;
+array[47]=-27.22048;
+array[48]=-16.82304;
+array[49]=-27.22048;
+array[50]=0;
+array[51]=0;
+array[52]=16.82304;
+array[53]=0;
+array[54]=0;
+array[55]=27.22048;
+array[56]=27.22048;
+array[57]=27.22048;
+array[58]=0;
+array[59]=16.82304;
+array[60]=0;]]></sText>
+         </text>
+      </attribs>
+   </obj>
+   <obj type="table/alloc 8b" uuid="9a8785a40e0aebb9cc22af09b0a7cf5f91ad2c64" name="tabz3" x="994" y="42">
+      <params/>
+      <attribs>
+         <combo attributeName="size" selection="64"/>
+         <text attributeName="init">
+            <sText><![CDATA[array[0]=-32;
+array[1]=-14.31088;
+array[2]=-14.31088;
+array[3]=-14.31088;
+array[4]=-14.31088;
+array[5]=-14.31088;
+array[6]=14.31088;
+array[7]=-14.31088;
+array[8]=-14.31088;
+array[9]=-14.31088;
+array[10]=14.31088;
+array[11]=14.31088;
+array[12]=-14.31088;
+array[13]=-14.31088;
+array[14]=-14.31088;
+array[15]=14.31088;
+array[16]=14.31088;
+array[17]=14.31088;
+array[18]=-14.31088;
+array[19]=-14.31088;
+array[20]=-14.31088;
+array[21]=14.31088;
+array[22]=-14.31088;
+array[23]=14.31088;
+array[24]=14.31088;
+array[25]=32;
+array[26]=14.31088;
+array[27]=14.31088;
+array[28]=-14.31088;
+array[29]=14.31088;
+array[30]=14.31088;
+array[31]=32;
+array[32]=14.31088;
+array[33]=14.31088;
+array[34]=14.31088;
+array[35]=32;
+array[36]=14.31088;
+array[37]=14.31088;
+array[38]=14.31088;
+array[39]=32;
+array[40]=14.31088;
+array[41]=32;
+array[42]=14.31088;
+array[43]=-14.31088;
+array[44]=14.31088;
+array[45]=-14.31088;
+array[46]=-32;
+array[47]=-14.31088;
+array[48]=14.31088;
+array[49]=-14.31088;
+array[50]=-32;
+array[51]=-14.31088;
+array[52]=14.31088;
+array[53]=-14.31088;
+array[54]=-32;
+array[55]=-14.31088;
+array[56]=14.31088;
+array[57]=-14.31088;
+array[58]=-32;
+array[59]=-14.31088;
+array[60]=-32;]]></sText>
+         </text>
+      </attribs>
+   </obj>
+   <obj type="table/alloc 8b" uuid="9a8785a40e0aebb9cc22af09b0a7cf5f91ad2c64" name="tabx2" x="1106" y="42">
+      <params/>
+      <attribs>
+         <combo attributeName="size" selection="16"/>
+         <text attributeName="init">
+            <sText><![CDATA[array[0]=0;
+array[1]=0;
+array[2]=20;
+array[3]=20;
+array[4]=0;
+array[5]=0;
+array[6]=0;
+array[7]=0;
+array[8]=-20;
+array[9]=-20;
+array[10]=0;
+array[11]=0;
+array[12]=0;
+array[13]=20;
+array[14]=0;
+array[15]=-20;]]></sText>
+         </text>
+      </attribs>
+   </obj>
+   <obj type="table/alloc 8b" uuid="9a8785a40e0aebb9cc22af09b0a7cf5f91ad2c64" name="taby2" x="1190" y="42">
+      <params/>
+      <attribs>
+         <combo attributeName="size" selection="16"/>
+         <text attributeName="init">
+            <sText><![CDATA[array[0]=-20;
+array[1]=20;
+array[2]=-20;
+array[3]=-20;
+array[4]=20;
+array[5]=-20;
+array[6]=-20;
+array[7]=20;
+array[8]=-20;
+array[9]=-20;
+array[10]=20;
+array[11]=-20;
+array[12]=-20;
+array[13]=-20;
+array[14]=-20;
+array[15]=-20;]]></sText>
+         </text>
+      </attribs>
+   </obj>
+   <obj type="table/alloc 8b" uuid="9a8785a40e0aebb9cc22af09b0a7cf5f91ad2c64" name="tabz2" x="1274" y="42">
+      <params/>
+      <attribs>
+         <combo attributeName="size" selection="16"/>
+         <text attributeName="init">
+            <sText><![CDATA[array[0]=-20;
+array[1]=0;
+array[2]=0;
+array[3]=0;
+array[4]=0;
+array[5]=20;
+array[6]=20;
+array[7]=0;
+array[8]=0;
+array[9]=0;
+array[10]=0;
+array[11]=-20;
+array[12]=-20;
+array[13]=0;
+array[14]=20;
+array[15]=0;]]></sText>
+         </text>
+      </attribs>
+   </obj>
+   <comment type="patch/comment" x="98" y="84" text="x rotation"/>
+   <comment type="patch/comment" x="238" y="84" text="y rotation"/>
+   <comment type="patch/comment" x="378" y="84" text="z rotation"/>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="dial_3" x="98" y="98">
+      <params>
+         <frac32.u.map name="value" value="5.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="conv/interp" uuid="d68c1a8709d8b55e3de8715d727ec0a2d8569d9a" name="interp_1" x="168" y="98">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="dial_5" x="238" y="98">
+      <params>
+         <frac32.u.map name="value" value="44.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="conv/interp" uuid="d68c1a8709d8b55e3de8715d727ec0a2d8569d9a" name="interp_2" x="308" y="98">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="dial_7" x="378" y="98">
+      <params>
+         <frac32.u.map name="value" value="41.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="conv/interp" uuid="d68c1a8709d8b55e3de8715d727ec0a2d8569d9a" name="interp_3" x="448" y="98">
+      <params/>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="98" y="196" text="trace"/>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="dial_6" x="98" y="210">
+      <params>
+         <frac32.u.map name="value" value="0.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="700" y="280" text="to change the shape modify the table names in the read and Imangler objects"/>
+   <comment type="patch/comment" x="1106" y="280" text="xyz rotation subpatch"/>
+   <obj type="rbrt/looper/lmangle" uuid="969e3cd9-59f4-43c9-9060-de5442226c8c" name="lmangle_1" x="308" y="308">
+      <params>
+         <frac32.s.map name="speed" value="64.0"/>
+         <bool32.tgl name="palindromic" value="0"/>
+      </params>
+      <attribs>
+         <objref attributeName="table" obj="tabx1"/>
+      </attribs>
+   </obj>
+   <obj type="rbrt/looper/lmangle" uuid="969e3cd9-59f4-43c9-9060-de5442226c8c" name="lmangle_2" x="448" y="308">
+      <params>
+         <frac32.s.map name="speed" value="64.0"/>
+         <bool32.tgl name="palindromic" value="0"/>
+      </params>
+      <attribs>
+         <objref attributeName="table" obj="taby1"/>
+      </attribs>
+   </obj>
+   <obj type="rbrt/looper/lmangle" uuid="969e3cd9-59f4-43c9-9060-de5442226c8c" name="lmangle_3" x="588" y="308">
+      <params>
+         <frac32.s.map name="speed" value="64.0"/>
+         <bool32.tgl name="palindromic" value="0"/>
+      </params>
+      <attribs>
+         <objref attributeName="table" obj="tabz1"/>
+      </attribs>
+   </obj>
+   <obj type="table/read interp" uuid="42918ec2255011ae3787cc5488c9b29980d796a8" name="read_1" x="728" y="308">
+      <params/>
+      <attribs>
+         <objref attributeName="table" obj="tabx1"/>
+      </attribs>
+   </obj>
+   <obj type="table/read interp" uuid="42918ec2255011ae3787cc5488c9b29980d796a8" name="read_2" x="854" y="308">
+      <params/>
+      <attribs>
+         <objref attributeName="table" obj="taby1"/>
+      </attribs>
+   </obj>
+   <obj type="table/read interp" uuid="42918ec2255011ae3787cc5488c9b29980d796a8" name="read_3" x="980" y="308">
+      <params/>
+      <attribs>
+         <objref attributeName="table" obj="tabz1"/>
+      </attribs>
+   </obj>
+   <patcher type="patch/patcher" uuid="55c12838-1c30-4bcb-826b-f0aa20189ae9" name="patcher_1" x="1120" y="308">
+      <params/>
+      <attribs/>
+      <subpatch appVersion="1.0.12">
+         <obj type="patch/inlet a" uuid="b577fe41e0a6bc7b5502ce33cb8a3129e2e28ee5" name="rotX" x="28" y="0">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="patch/inlet a" uuid="b577fe41e0a6bc7b5502ce33cb8a3129e2e28ee5" name="rotY" x="210" y="42">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="patch/inlet a" uuid="b577fe41e0a6bc7b5502ce33cb8a3129e2e28ee5" name="rotZ" x="350" y="70">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/sin" uuid="3fd3c55bdecb474393c99b2a5b01e9bed143eca7" name="sin_1" x="168" y="112">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/sin" uuid="3fd3c55bdecb474393c99b2a5b01e9bed143eca7" name="sin_2" x="294" y="112">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/sin" uuid="3fd3c55bdecb474393c99b2a5b01e9bed143eca7" name="sin_3" x="420" y="112">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/cos" uuid="a2ba1ca8d10b854e06728c088c43409866624fc1" name="cos_1" x="168" y="196">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/cos" uuid="a2ba1ca8d10b854e06728c088c43409866624fc1" name="cos_2" x="294" y="196">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/cos" uuid="a2ba1ca8d10b854e06728c088c43409866624fc1" name="cos_3" x="420" y="196">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/*" uuid="dc7fbdd46e5e6d4b8de62ee63fd6321639b2f167" name="*_1" x="182" y="280">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/*" uuid="dc7fbdd46e5e6d4b8de62ee63fd6321639b2f167" name="*_2" x="238" y="280">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/*" uuid="dc7fbdd46e5e6d4b8de62ee63fd6321639b2f167" name="*_3" x="294" y="280">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/*" uuid="dc7fbdd46e5e6d4b8de62ee63fd6321639b2f167" name="*_4" x="392" y="280">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/*" uuid="dc7fbdd46e5e6d4b8de62ee63fd6321639b2f167" name="*_5" x="448" y="280">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/*" uuid="dc7fbdd46e5e6d4b8de62ee63fd6321639b2f167" name="*_6" x="504" y="280">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/*" uuid="dc7fbdd46e5e6d4b8de62ee63fd6321639b2f167" name="*_7" x="602" y="280">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/+" uuid="faedbea4612d9bd3644d6d3bf31946d848a70e19" name="+_1" x="182" y="336">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/-" uuid="832edca3a945aa25ae1875d277bdd12d6709031a" name="-_1" x="392" y="336">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="patch/inlet a" uuid="b577fe41e0a6bc7b5502ce33cb8a3129e2e28ee5" name="X" x="42" y="364">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/*" uuid="dc7fbdd46e5e6d4b8de62ee63fd6321639b2f167" name="*_8" x="252" y="406">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/*" uuid="dc7fbdd46e5e6d4b8de62ee63fd6321639b2f167" name="*_9" x="350" y="406">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/inv" uuid="7f4c6cf4dcf79f9b0aa81c2eaf540405875714a3" name="inv_1" x="462" y="406">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="patch/inlet a" uuid="b577fe41e0a6bc7b5502ce33cb8a3129e2e28ee5" name="Y" x="42" y="420">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="patch/inlet a" uuid="b577fe41e0a6bc7b5502ce33cb8a3129e2e28ee5" name="Z" x="42" y="490">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/*" uuid="dc7fbdd46e5e6d4b8de62ee63fd6321639b2f167" name="*_10" x="168" y="560">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/*" uuid="dc7fbdd46e5e6d4b8de62ee63fd6321639b2f167" name="*_11" x="252" y="560">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/*" uuid="dc7fbdd46e5e6d4b8de62ee63fd6321639b2f167" name="*_12" x="336" y="560">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="mix/mix 3" uuid="8be16f2156012a4a8974804178cece51555f272b" name="mix_1" x="420" y="574">
+            <params>
+               <frac32.u.map name="gain1" value="63.5"/>
+               <frac32.u.map name="gain2" value="63.5"/>
+               <frac32.u.map name="gain3" value="63.5"/>
+            </params>
+            <attribs/>
+         </obj>
+         <obj type="patch/outlet a" uuid="abd8c5fd3b0524a6630f65cad6dc27f6c58e2a3e" name="Xo" x="518" y="574">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/*" uuid="dc7fbdd46e5e6d4b8de62ee63fd6321639b2f167" name="*_13" x="168" y="616">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/*" uuid="dc7fbdd46e5e6d4b8de62ee63fd6321639b2f167" name="*_14" x="252" y="616">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/*" uuid="dc7fbdd46e5e6d4b8de62ee63fd6321639b2f167" name="*_15" x="336" y="616">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="mix/mix 3" uuid="8be16f2156012a4a8974804178cece51555f272b" name="mix_2" x="420" y="770">
+            <params>
+               <frac32.u.map name="gain1" value="63.5"/>
+               <frac32.u.map name="gain2" value="63.5"/>
+               <frac32.u.map name="gain3" value="63.5"/>
+            </params>
+            <attribs/>
+         </obj>
+         <obj type="patch/outlet a" uuid="abd8c5fd3b0524a6630f65cad6dc27f6c58e2a3e" name="Yo" x="518" y="770">
+            <params/>
+            <attribs/>
+         </obj>
+         <nets>
+            <net>
+               <source obj="X" outlet="inlet"/>
+               <dest obj="*_10" inlet="a"/>
+               <dest obj="*_13" inlet="a"/>
+            </net>
+            <net>
+               <source obj="Y" outlet="inlet"/>
+               <dest obj="*_11" inlet="a"/>
+               <dest obj="*_14" inlet="a"/>
+            </net>
+            <net>
+               <source obj="rotX" outlet="inlet"/>
+               <dest obj="sin_1" inlet="phase"/>
+               <dest obj="cos_1" inlet="phase"/>
+            </net>
+            <net>
+               <source obj="Z" outlet="inlet"/>
+               <dest obj="*_12" inlet="a"/>
+               <dest obj="*_15" inlet="a"/>
+            </net>
+            <net>
+               <source obj="rotY" outlet="inlet"/>
+               <dest obj="sin_2" inlet="phase"/>
+               <dest obj="cos_2" inlet="phase"/>
+            </net>
+            <net>
+               <source obj="rotZ" outlet="inlet"/>
+               <dest obj="sin_3" inlet="phase"/>
+               <dest obj="cos_3" inlet="phase"/>
+            </net>
+            <net>
+               <source obj="cos_1" outlet="out"/>
+               <dest obj="*_1" inlet="a"/>
+               <dest obj="*_6" inlet="b"/>
+            </net>
+            <net>
+               <source obj="cos_3" outlet="out"/>
+               <dest obj="*_1" inlet="b"/>
+               <dest obj="*_4" inlet="a"/>
+               <dest obj="*_9" inlet="a"/>
+            </net>
+            <net>
+               <source obj="sin_1" outlet="out"/>
+               <dest obj="*_2" inlet="a"/>
+               <dest obj="*_4" inlet="b"/>
+               <dest obj="*_7" inlet="b"/>
+            </net>
+            <net>
+               <source obj="sin_2" outlet="out"/>
+               <dest obj="*_2" inlet="b"/>
+               <dest obj="*_5" inlet="a"/>
+               <dest obj="inv_1" inlet="in"/>
+            </net>
+            <net>
+               <source obj="sin_3" outlet="out"/>
+               <dest obj="*_3" inlet="a"/>
+               <dest obj="*_6" inlet="a"/>
+               <dest obj="*_8" inlet="b"/>
+            </net>
+            <net>
+               <source obj="*_2" outlet="result"/>
+               <dest obj="*_3" inlet="b"/>
+            </net>
+            <net>
+               <source obj="*_3" outlet="result"/>
+               <dest obj="+_1" inlet="in2"/>
+            </net>
+            <net>
+               <source obj="*_1" outlet="result"/>
+               <dest obj="+_1" inlet="in1"/>
+            </net>
+            <net>
+               <source obj="cos_2" outlet="out"/>
+               <dest obj="*_7" inlet="a"/>
+               <dest obj="*_8" inlet="a"/>
+               <dest obj="*_9" inlet="b"/>
+            </net>
+            <net>
+               <source obj="*_4" outlet="result"/>
+               <dest obj="*_5" inlet="b"/>
+            </net>
+            <net>
+               <source obj="*_5" outlet="result"/>
+               <dest obj="-_1" inlet="in1"/>
+            </net>
+            <net>
+               <source obj="*_6" outlet="result"/>
+               <dest obj="-_1" inlet="in2"/>
+            </net>
+            <net>
+               <source obj="mix_1" outlet="out"/>
+               <dest obj="Xo" inlet="outlet"/>
+            </net>
+            <net>
+               <source obj="mix_2" outlet="out"/>
+               <dest obj="Yo" inlet="outlet"/>
+            </net>
+            <net>
+               <source obj="+_1" outlet="out"/>
+               <dest obj="*_10" inlet="b"/>
+            </net>
+            <net>
+               <source obj="*_8" outlet="result"/>
+               <dest obj="*_13" inlet="b"/>
+            </net>
+            <net>
+               <source obj="-_1" outlet="out"/>
+               <dest obj="*_11" inlet="b"/>
+            </net>
+            <net>
+               <source obj="*_10" outlet="result"/>
+               <dest obj="mix_1" inlet="in1"/>
+            </net>
+            <net>
+               <source obj="*_11" outlet="result"/>
+               <dest obj="mix_1" inlet="in2"/>
+            </net>
+            <net>
+               <source obj="*_13" outlet="result"/>
+               <dest obj="mix_2" inlet="in2"/>
+            </net>
+            <net>
+               <source obj="*_7" outlet="result"/>
+               <dest obj="*_12" inlet="b"/>
+            </net>
+            <net>
+               <source obj="*_12" outlet="result"/>
+               <dest obj="mix_1" inlet="in3"/>
+            </net>
+            <net>
+               <source obj="*_9" outlet="result"/>
+               <dest obj="*_14" inlet="b"/>
+            </net>
+            <net>
+               <source obj="*_14" outlet="result"/>
+               <dest obj="mix_2" inlet="in1"/>
+            </net>
+            <net>
+               <source obj="inv_1" outlet="out"/>
+               <dest obj="*_15" inlet="b"/>
+            </net>
+            <net>
+               <source obj="*_15" outlet="result"/>
+               <dest obj="mix_2" inlet="in3"/>
+            </net>
+         </nets>
+         <settings>
+            <subpatchmode>no</subpatchmode>
+         </settings>
+         <notes><![CDATA[]]></notes>
+         <windowPos>
+            <x>0</x>
+            <y>2</y>
+            <width>912</width>
+            <height>1080</height>
+         </windowPos>
+      </subpatch>
+   </patcher>
+   <obj type="audio/out stereo" uuid="a1ca7a567f535acc21055669829101d3ee7f0189" name="out_1" x="1232" y="308">
+      <params/>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="98" y="322" text="frequency"/>
+   <obj type="osc/phasor" uuid="e5553f226015bf75f4fdc3faa39be1bee4f84044" name="phasor_2" x="98" y="336">
+      <params>
+         <frac32.s.map name="pitch" value="-31.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <comment type="patch/comment" x="98" y="476" text="select table range to read"/>
+   <obj type="ctrl/dial p" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="dial_2" x="98" y="490">
+      <params>
+         <frac32.u.map name="value" value="24.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="sss/math/scaleInOut" uuid="1469e0f0-7674-4f23-897c-5dff075314f6" name="scaleInOut_1" x="98" y="574">
+      <params>
+         <frac32.s.map name="inMin" value="-64.0"/>
+         <frac32.s.map name="inMax" value="64.0"/>
+         <frac32.s.map name="outMin" value="-64.0"/>
+         <frac32.s.map name="outMax" value="64.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <nets>
+      <net>
+         <source obj="phasor_2" outlet="phasor"/>
+         <dest obj="lmangle_1" inlet="loopstart"/>
+         <dest obj="lmangle_2" inlet="loopstart"/>
+         <dest obj="lmangle_3" inlet="loopstart"/>
+      </net>
+      <net>
+         <source obj="lmangle_1" outlet="pos"/>
+         <dest obj="read_1" inlet="a"/>
+      </net>
+      <net>
+         <source obj="toggle_2" outlet="o"/>
+         <dest obj="lmangle_1" inlet="play"/>
+         <dest obj="lmangle_2" inlet="play"/>
+         <dest obj="lmangle_3" inlet="play"/>
+      </net>
+      <net>
+         <source obj="lmangle_2" outlet="pos"/>
+         <dest obj="read_2" inlet="a"/>
+      </net>
+      <net>
+         <source obj="lmangle_3" outlet="pos"/>
+         <dest obj="read_3" inlet="a"/>
+      </net>
+      <net>
+         <source obj="dial_6" outlet="out"/>
+         <dest obj="lmangle_1" inlet="offset"/>
+         <dest obj="lmangle_2" inlet="offset"/>
+         <dest obj="lmangle_3" inlet="offset"/>
+      </net>
+      <net>
+         <source obj="dial_2" outlet="out"/>
+         <dest obj="scaleInOut_1" inlet="in"/>
+      </net>
+      <net>
+         <source obj="interp_1" outlet="o"/>
+         <dest obj="patcher_1" inlet="rotX"/>
+      </net>
+      <net>
+         <source obj="interp_2" outlet="o"/>
+         <dest obj="patcher_1" inlet="rotY"/>
+      </net>
+      <net>
+         <source obj="interp_3" outlet="o"/>
+         <dest obj="patcher_1" inlet="rotZ"/>
+      </net>
+      <net>
+         <source obj="patcher_1" outlet="Xo"/>
+         <dest obj="out_1" inlet="left"/>
+      </net>
+      <net>
+         <source obj="patcher_1" outlet="Yo"/>
+         <dest obj="out_1" inlet="right"/>
+      </net>
+      <net>
+         <source obj="dial_3" outlet="out"/>
+         <dest obj="interp_1" inlet="i"/>
+      </net>
+      <net>
+         <source obj="dial_5" outlet="out"/>
+         <dest obj="interp_2" inlet="i"/>
+      </net>
+      <net>
+         <source obj="dial_7" outlet="out"/>
+         <dest obj="interp_3" inlet="i"/>
+      </net>
+      <net>
+         <source obj="scaleInOut_1" outlet="out"/>
+         <dest obj="lmangle_1" inlet="range"/>
+         <dest obj="lmangle_2" inlet="range"/>
+         <dest obj="lmangle_3" inlet="range"/>
+      </net>
+      <net>
+         <source obj="read_1" outlet="o"/>
+         <dest obj="patcher_1" inlet="X"/>
+      </net>
+      <net>
+         <source obj="read_2" outlet="o"/>
+         <dest obj="patcher_1" inlet="Y"/>
+      </net>
+      <net>
+         <source obj="read_3" outlet="o"/>
+         <dest obj="patcher_1" inlet="Z"/>
+      </net>
+   </nets>
+   <settings>
+      <subpatchmode>no</subpatchmode>
+      <MidiChannel>1</MidiChannel>
+      <NPresets>8</NPresets>
+      <NPresetEntries>32</NPresetEntries>
+      <NModulationSources>8</NModulationSources>
+      <NModulationTargetsPerSource>8</NModulationTargetsPerSource>
+   </settings>
+   <notes><![CDATA[]]></notes>
+   <windowPos>
+      <x>0</x>
+      <y>23</y>
+      <width>1708</width>
+      <height>948</height>
+   </windowPos>
+</patch-1.0>
